@@ -20,6 +20,10 @@
 
     $(window).on('load', function () {
         aos_init();
+
+        $('#btn-cookie').on('click', function (e) {
+            $('#cookie-information').hide();
+        });
     });
 
 })(jQuery);

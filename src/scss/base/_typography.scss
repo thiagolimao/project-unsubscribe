@@ -108,10 +108,18 @@ h6 {
     @media screen and (max-width: 992px) {
       font-size: 2.475rem;
     }
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.675rem;
+    }
     small {
       display: block;
       font-size: 1.4rem;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.275rem;
+      }
     }
 
     &::before {
