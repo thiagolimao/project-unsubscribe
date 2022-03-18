@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Components Cookies
+--------------------------------------------------------------*/
+.cookie-information {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #464646;
+  z-index: 99999;
+  padding: 1.5rem 0;
+  display: block;
+  .description {
+    color: $white;
+    margin: 0;
+    a.link-default {
+      color: $primary;
+      display: inline-block;
+      &:before {
+        background-color: $primary;
+      }
+    }
+  }
+  .btn-cookie {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    @media (max-width: 991px) {
+      margin-top: 1rem;
+    }
+    &:hover {
+      background-color: transparent;
+      border-color: $primary;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}

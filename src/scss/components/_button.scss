@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+# Components Button
+--------------------------------------------------------------*/
+.btn {
+  font-weight: $fw-bold;
+  letter-spacing: 0.05rem;
+  border-width: 2px;
+
+  font-size: 0.875rem;
+  padding: 0.675rem 1.125rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (max-width: 599px) {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    border-radius: 0.25rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $dark-primary;
+      border-color: $dark-primary;
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($primary, 25%);
+    }
+
+    &.invert {
+      background-color: $white;
+      border-color: $white;
+      color: $primary;
+
+      &:hover,
+      &:active,
+      &:not(:disabled):not(.disabled):active {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+      }
+    }
+  }
+  &.btn-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+    color: $white;
+    border-radius: 2rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $dark-secondary;
+      border-color: $dark-secondary;
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($secondary, 25%);
+    }
+  }
+
+  &.btn-outline-primary {
+    border-color: $primary;
+    color: $primary;
+    border-radius: 2rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $primary;
+      border-color: $primary;
+      color: $white;
+
+      .ico {
+        filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+      }
+    }
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($primary, 25%);
+    }
+  }
+
+  &.btn-outline-secondary {
+    border-color: $secondary;
+    color: $secondary;
+    border-radius: 2rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $secondary;
+      border-color: $secondary;
+      color: $white;
+
+      .ico {
+        filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+      }
+    }
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($secondary, 25%);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Info cards
+--------------------------------------------------------------*/
+.section-form {
+  position: relative;
+  padding: 4rem 0;
+  background-color: $bg-primary;
+
+  p {
+    color: $white;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .box-form {
+    @media screen and (max-width: 992px) {
+      margin-top: 2rem;
+    }
+    background: $bg-light;
+    border-radius: 5px;
+    padding: 1.6rem;
+    box-shadow: 0 0 20px 5px rgb(0 0 0 / 10%);
+    h5 {
+      margin-bottom: 0.8rem;
+      color: $dark-primary;
+      font-weight: $fw-semi;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// General Colors
+$red: #dc3545;
+$green: #28a745;
+$blue: #007bff;
+$yellow: #ffc107;
+$orange: #fd7e14;
+$brown: #7b4f2c;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$white: #ffffff;
+$gray: #495057;
+$black: #000000;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+/// Default color variables
+$primary: #24834d;
+$dark-primary: #175f33;
+$secondary: #ef6873;
+$dark-secondary: lighten($secondary, 0.2%);
+
+$text-color: #18191f;
+$heading-color: $text-color;
+
+// Background color
+$bg-light: #f7fafc;
+$bg-primary: $primary;
+
+// Link Colors
+$links: $secondary;
+$links-hover: lighten($secondary, 0.2%);
+
+/// Fonts Variables
+$font-primary: "Mulish", sans-serif;
+$font-secondary: "Mulish", sans-serif;
+
+$font-default: $font-primary;
+$heading-font: $font-default;
+$text-font: $font-default;
+
+/// Fonts weight
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+$fw-black: 900;
